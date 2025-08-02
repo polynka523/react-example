@@ -1,0 +1,106 @@
+body {
+    --color: #404040;
+    --background-color: white;
+    background-color: var(--background-color);
+    --form-background:rgb(241, 214, 214);
+    --toggle-btn-color-back:rgb(252, 181, 49);
+    --toggle-hover:rgb(173, 125, 35);
+    --toggle-btn-color-txt:white;
+    --form-hover: rgb(193, 163, 163);
+    
+    color: var(--color);
+
+}
+
+body.dark {
+    --background-color: #404040;
+    --color: rgb(254, 226, 226);
+    --form-background: rgb(255, 106, 0);
+    --form-hover:rgb(156, 71, 10);
+    --toggle-btn-color-back:rgb(245, 252, 49);
+    --toggle-hover:rgb(176, 181, 38);
+    --toggle-btn-color-txt:black;
+    background-color: var(--background-color);
+    
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin: 70px auto;
+    padding-top: 20px ;
+    text-align: center;
+    justify-content: flex-start;
+    width: 45%;
+    background-color: var(--form-background);
+    min-height: 600px;
+    border-radius: 20px;
+    box-shadow: 20px 20px;
+}
+
+.todo-row {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    font-weight: 600;
+    font-family: 'Trebuchet MS', sans-serif;
+    align-items: center;
+    justify-content:  flex-start;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.todo-row:hover {
+    background-color: var(--form-hover);
+    border: solid 1px black;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.todo-input {
+    font-size: 30px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.todo-btn {
+    font-size: 30px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--toggle-btn-color-back);
+    color: var(--toggle-btn-color-txt);
+}
+
+
+
+.todo-btn:hover {
+    background-color: var(--toggle-hover);
+}
+
+.theme-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color:var(--toggle-btn-color-back);
+    color:var(--toggle-btn-color-txt);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.theme-btn:hover {
+    background-color: var(--toggle-hover);
+}
